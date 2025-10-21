@@ -5,18 +5,160 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <title>Christopher Muriithi | MEL • Data Analytics • Cybersecurity</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
-    body{margin:0;background:#0f172a;color:#f8fafc;font-family:system-ui,Segoe UI,Roboto}a{color:#38bdf8;text-decoration:none}.wrap{max-width:1000px;margin:0 auto;padding:28px}.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}.card{background:#111827;border:1px solid #334155;border-radius:16px;padding:16px}</style>
-</head><body>
-<div class="wrap">
-<h1>Christopher Muriithi</h1>
-<p>Monitoring, Evaluation & Learning · Data Analytics · Cybersecurity (GRC)</p>
-<p>Email: <a href="mailto:nomiskris@gmail.com">nomiskris@gmail.com</a> · LinkedIn: <a href="https://www.linkedin.com/in/christopher-mwangi-894265b0" target="_blank">Profile</a> · GitHub: <a href="https://github.com/ChrisMuriithi" target="_blank">@ChrisMuriithi</a></p>
-<div class="grid">
-  <div class="card"><h2>MEL Portfolio</h2><p>EMR integration, DQA, dashboards, interoperability.</p><p><a href="https://github.com/ChrisMuriithi/MEL-Portfolio" target="_blank">Repo</a> · <a href="https://chrismuriithi.github.io/MEL-Portfolio/" target="_blank">Pages</a></p></div>
-  <div class="card"><h2>Data Analyst Portfolio</h2><p>Power BI, SQL and Python analytics projects.</p><p><a href="https://github.com/ChrisMuriithi/Data-Analyst-Portfolio" target="_blank">Repo</a> · <a href="https://chrismuriithi.github.io/Data-Analyst-Portfolio/" target="_blank">Pages</a></p></div>
-  <div class="card"><h2>Cybersecurity Portfolio</h2><p>GRC, vulnerability management, and data protection.</p><p><a href="https://github.com/ChrisMuriithi/Cybersecurity-Portfolio" target="_blank">Repo</a> · <a href="https://chrismuriithi.github.io/Cybersecurity-Portfolio/" target="_blank">Pages</a></p></div>
-</div>
-<footer><p>© 2025 Christopher Muriithi. All rights reserved.</p></footer>
-</div>
-</body></html>
+    :root {
+      --bg-dark: #0f172a;
+      --text-dark: #f8fafc;
+      --bg-light: #f9fafb;
+      --text-light: #111827;
+      --accent: #38bdf8;
+      --card-dark: #111827;
+      --card-light: #ffffff;
+      --border: #334155;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(1.6rem, 4vw, 2rem);
+    }
+
+    .tag {
+      color: #94a3b8;
+      margin-top: 4px;
+    }
+
+    .toggle-theme {
+      cursor: pointer;
+      font-size: 1.2rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 6px 10px;
+      background: none;
+      color: inherit;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    .toggle-theme:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      margin-top: 24px;
+    }
+
+    .card {
+      background-color: var(--card-dark);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .light {
+      background-color: var(--bg-light);
+      color: var(--text-light);
+    }
+
+    .light .card {
+      background-color: var(--card-light);
+    }
+
+    footer {
+      margin: 28px 0;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Christopher Muriithi</h1>
+        <p class="tag">Monitoring, Evaluation & Learning · Data Analytics · Cybersecurity (GRC)</p>
+      </div>
+      <button id="theme-toggle" class="toggle-theme">🌙</button>
+    </header>
+
+    <p>Email: <a href="mailto:nomiskris@gmail.com">nomiskris@gmail.com</a> · 
+      LinkedIn: <a href="https://www.linkedin.com/in/christopher-mwangi-894265b0" target="_blank">Profile</a> · 
+      GitHub: <a href="https://github.com/ChrisMuriithi" target="_blank">@ChrisMuriithi</a></p>
+
+    <div class="grid">
+      <div class="card">
+        <h2>MEL Portfolio</h2>
+        <p>EMR integration, DQA, dashboards, interoperability.</p>
+        <p><a href="https://github.com/ChrisMuriithi/MEL-Portfolio" target="_blank">Repo</a> · 
+           <a href="https://chrismuriithi.github.io/MEL-Portfolio/" target="_blank">Pages</a></p>
+      </div>
+
+      <div class="card">
+        <h2>Data Analyst Portfolio</h2>
+        <p>Power BI, SQL and Python analytics projects.</p>
+        <p><a href="https://github.com/ChrisMuriithi/Data-Analyst-Portfolio" target="_blank">Repo</a> · 
+           <a href="https://chrismuriithi.github.io/Data-Analyst-Portfolio/" target="_blank">Pages</a></p>
+      </div>
+
+      <div class="card">
+        <h2>Cybersecurity Portfolio</h2>
+        <p>GRC, vulnerability management, and data protection.</p>
+        <p><a href="https://github.com/ChrisMuriithi/Cybersecurity-Portfolio" target="_blank">Repo</a> · 
+           <a href="https://chrismuriithi.github.io/Cybersecurity-Portfolio/" target="_blank">Pages</a></p>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Christopher Muriithi. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    const savedTheme = localStorage.getItem('theme');
+
+    // Load saved theme
+    if (savedTheme === 'light') {
+      body.classList.add('light');
+      toggle.textContent = '🌞';
+    }
+
+    // Toggle theme
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('light');
+      const isLight = body.classList.contains('light');
+      toggle.textContent = isLight ? '🌞' : '🌙';
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+  </script>
+</body>
+</html>
